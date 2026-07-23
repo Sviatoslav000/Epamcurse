@@ -1,0 +1,4 @@
+servername: example.com
+documentroot: /var/www/html
+serveradmin: admin@example.com
+directorypath: /var/www/html

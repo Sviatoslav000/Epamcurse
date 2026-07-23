@@ -1,0 +1,13 @@
+NameVirtualHost *:80
+
+<VirtualHost *:80>
+  ServerName {{ servername }}
+  DocumentRoot {{ documentroot }}
+  ServerAdmin {{ serveradmin }}
+  <Directory "{{ directorypath }}">
+     AllowOverride All
+     Options Indexes FollowSymLinks
+     Order allow,deny
+     Allow from all
+  </Directory>
+</VirtualHost>
